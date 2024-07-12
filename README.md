@@ -4,6 +4,7 @@
 <img src="https://skillicons.dev/icons?i=python,vscode"/>
 </p>
 
+### Tip: Press " . " (dot) key on your keyboard to open Github's built-in web-based editor.
 
 ## Generating Data:
 
