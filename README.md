@@ -70,7 +70,8 @@ As a first step, I generated a random sample of data that consists of 30 entries
 - Once installed and imported, I could use its `bar` built-in function,  
   and set x-axis to the `age_labels` that I previously defined  
   and the y-axis to `age_group_count`
-- Final result:
+- Final result:  
+  <img width="630" alt="image" src="https://github.com/user-attachments/assets/4dd39bb1-f497-4133-86ef-77982662d0bc">
 
 ## Resources:
 
