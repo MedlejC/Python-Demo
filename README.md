@@ -37,6 +37,12 @@ As a first step, I generated a random sample of data that consists of 30 entries
   active_users = df.loc[df['Status'] == 'Active']
   ```
 
+### 2-b. Percentage of Female Users:
+
+- Similar filtering approach to part 2.a
+- To calculate the percentage of females, I used this equation:  
+  `(# of Females / Total # of Users) * 100`
+
 ## Resources:
 
 - https://stackoverflow.com/questions/54106071/how-can-i-set-up-a-virtual-environment-for-python-in-visual-studio-code
