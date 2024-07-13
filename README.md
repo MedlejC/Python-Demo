@@ -18,7 +18,7 @@
 - Activate your Virtual Environment:
   ```bash
   python3 -m venv venv
-  source venv/bin/activate # for macOS and Linus
+  source venv/bin/activate # for macOS and Linux
   # OR
   .\venv\Scripts\activate # for Windows
   ```
