@@ -53,3 +53,14 @@ df["Age Group"] = pd.cut(df['Age'], bins=age_bins, labels=age_labels)
 # Then, I can count the number of users in each age group
 age_group_count = df.groupby("Age Group").size()
 print(age_group_count)
+
+
+# Part 4 - Bar Chart
+import matplotlib.pyplot as plt
+
+plt.bar(age_labels, age_group_count)
+plt.title('Distribution of Users by Age Group')
+plt.xlabel('Age Groups')
+plt.ylabel('Number of Users')
+plt.xticks(rotation=45)
+plt.show()
