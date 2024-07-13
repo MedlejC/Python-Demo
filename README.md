@@ -6,6 +6,33 @@
 
 ### Tip: Press " . " (dot) key on your keyboard to open Github's built-in web-based editor.
 
+## Usage:
+- Clone the Repository
+  ```bash
+  git clone https://github.com/MedlejC/Python-Demo.git
+  ```
+- Navigate to the Project Directory
+  ```bash
+  cd Python-Demo
+  ```
+- Activate your Virtual Environment:
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate # for macOS and Linus
+  # OR
+  .\venv\Scripts\activate # for Windows
+  ```
+- Install the Required Packages:
+  ```bash
+  pip install -r requirements.txt
+  ```
+  I kept my requirements.txt file updated throughout this progress by using  
+  `pip freeze > requirements.txt`
+- Run the code:
+  ```bash
+  python PythonDemo.py
+  ```
+
 ## Generating Data:
 
 As a first step, I generated a random sample of data that consists of 30 entries, using ChatGPT.
