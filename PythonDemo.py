@@ -8,7 +8,13 @@ import pandas as pd
 # First we read the CSV file into a pandas DataFrame (df)
 # Then we set the display options by enforcing a maximum number of columns to be displayed in the terminal
 # In that way, I ensure that all columns are printed out
+
 users = "./users.csv"
+# users = "./users_higher_Active_freq.csv"
+# users = "./users_higher_Male_freq.csv"
+# users = "./users_higher_Age_randomness.csv"
+
+
 df = pd.read_csv(users)
 pd.options.display.max_columns = len(df.columns)
 print("----------------------------------")
