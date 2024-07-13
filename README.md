@@ -43,7 +43,7 @@ As a first step, I generated a random sample of data that consists of 30 entries
 - To calculate the percentage of females, I used this equation:  
   `(# of Females / Total # of Users) * 100`
 
-### 3-b. Age Groups:
+### 2-c. Age Groups:
 
 - As an initial step, I defined the age groups that I want to use (age_bins & age_labels)
   **Age Labels should always be smaller than the bins by 1.**  
