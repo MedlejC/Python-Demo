@@ -30,6 +30,7 @@ print("\nNumber of Active Users: ", len(active_users))
 print()
 
 # Part 2-b:
+# This block filters the data where 'Gender' column equals 'Female'
 female_users = df.loc[df['Gender'] == 'Female']
 print("----------------------------------")
 print("Female Users:")
@@ -40,3 +41,15 @@ print(female_users)
 percentage_female = (len(female_users)/len(df))*100
 print("\nPercentage of Female Users: ",percentage_female)
 print()
+
+# Part 2-c:
+# This blocks define the age groups and their corresponding labels
+age_bins = [0,20,30,40,50,60,70,80,90,100]
+age_labels = ['0-20', '21-30', '31-40', '41-50', '51-60', '61 70', '71-80', '81-90', '91-100']
+
+# Adding a new column (Age Group) that categorizes the ages into the bins defined, with their corresponding labels
+df["Age Group"] = pd.cut(df['Age'], bins=age_bins, labels=age_labels)
+
+# Then, I can count the number of users in each age group
+age_group_count = df.groupby("Age Group").size()
+print(age_group_count)

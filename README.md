@@ -43,8 +43,27 @@ As a first step, I generated a random sample of data that consists of 30 entries
 - To calculate the percentage of females, I used this equation:  
   `(# of Females / Total # of Users) * 100`
 
+### 3-b. Age Groups:
+
+- As an initial step, I defined the age groups that I want to use (age_bins & age_labels)
+  **Age Labels should always be smaller than the bins by 1.**  
+  Ex: If I want to create 2 age groups: Below 50 and Above 50,  
+  I use: `age_bins = [0, 50, 100]`  
+  and `age_labels = ['Below 50', 'Above 50']`  
+  The groups would then be divided from 0-49, and 50-100 (Assuming right = False --> Left-Inclusive interval)
+- Once age groups are set, I can categorize the ages into the defined groups by using:
+  ```bash
+  df['Age Group'] = pd.cut(df['Age'], bins=age_bins, labels=age_labels)
+  ```
+  This creates a new Column, `Age Group`, in my original table, and categorizes the ages into the bins defined by `age_bins`, and labels them with `age_labels`
+- As a final step, I group my table by the `Age Group` column I had just created and count the number of users in each group:
+  ```bash
+  age_group_count = df.groupby('Age Group').size()
+  ```
+
 ## Resources:
 
 - https://stackoverflow.com/questions/54106071/how-can-i-set-up-a-virtual-environment-for-python-in-visual-studio-code
 - https://www.geeksforgeeks.org/ways-to-filter-pandas-dataframe-by-column-values/
 - https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html
+- https://www.python4data.science/en/24.1.0/workspace/pandas/discretisation.html
