@@ -61,9 +61,21 @@ As a first step, I generated a random sample of data that consists of 30 entries
   age_group_count = df.groupby('Age Group').size()
   ```
 
+### 4. Bar Chart:
+
+- To be able to create a chart, I had to install matplotlib:
+  ```bash
+  pip install matplotlib
+  ```
+- Once installed and imported, I could use its `bar` built-in function,  
+  and set x-axis to the `age_labels` that I previously defined  
+  and the y-axis to `age_group_count`
+- Final result:
+
 ## Resources:
 
 - https://stackoverflow.com/questions/54106071/how-can-i-set-up-a-virtual-environment-for-python-in-visual-studio-code
 - https://www.geeksforgeeks.org/ways-to-filter-pandas-dataframe-by-column-values/
 - https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html
 - https://www.python4data.science/en/24.1.0/workspace/pandas/discretisation.html
+- https://www.geeksforgeeks.org/bar-plot-in-matplotlib/
