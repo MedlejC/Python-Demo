@@ -28,3 +28,15 @@ print(active_users)
 # Number of active users:
 print("\nNumber of Active Users: ", len(active_users))
 print()
+
+# Part 2-b:
+female_users = df.loc[df['Gender'] == 'Female']
+print("----------------------------------")
+print("Female Users:")
+print("----------------------------------")
+print(female_users)
+
+# Percentage of female users:
+percentage_female = (len(female_users)/len(df))*100
+print("\nPercentage of Female Users: ",percentage_female)
+print()
