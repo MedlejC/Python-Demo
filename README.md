@@ -101,7 +101,7 @@ As a first step, I generated a random sample of data that consists of 30 entries
   <img width="630" alt="image" src="https://github.com/user-attachments/assets/4dd39bb1-f497-4133-86ef-77982662d0bc">
 
 ## Different CSV files:
-- I came up with an idea to generate more csv files, each with a specific characteristic, and test my code output on each one.
+- I came up with an idea to generate more csv files, each with a specific characteristic, and test my code output respectively:
     - `users_higher_Active_freq.csv`: I asked chatGPT to generate another dataset but with a higher frequency for active users.
     - `users_higher_Male_freq.csv`: I asked chatGPT to generate another dataset but with a higher frequency for Male users.
     - `users_higher_Age_randomness.csv`: I asked chatGPT to generate another dataset but with higher Age randomness between users.
