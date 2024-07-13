@@ -17,3 +17,14 @@ print("----------------------------------")
 print(df)
 print()
 
+# Part 2-a:
+# This block filters the data where 'Status' column equals 'Active'
+active_users = df.loc[df['Status'] == 'Active']
+print("----------------------------------")
+print("Active Users:")
+print("----------------------------------")
+print(active_users)
+
+# Number of active users:
+print("\nNumber of Active Users: ", len(active_users))
+print()
