@@ -26,7 +26,7 @@
   ```bash
   pip install -r requirements.txt
   ```
-  I kept my requirements.txt file updated throughout this progress by using  
+  I kept my requirements.txt file updated throughout the project's progress by using:  
   `pip freeze > requirements.txt`
 - Run the code:
   ```bash
